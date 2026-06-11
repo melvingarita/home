@@ -3,15 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melvin Garita — Banking Executive</title>
-    <meta name="description" content="Melvin Garita — Banking Executive. Leading Institutional Performance. Deputy General Manager at Banco Nacional de Costa Rica.">
-
-    <!-- Google Fonts -->
+    
+    <!-- Title -->
+    <title>Melvin Garita | Banking Executive — Banco Nacional de Costa Rica</title>
+    
+    <!-- Meta -->
+    <meta name="description" content="Senior banking executive leading institutional performance at one of Central America's largest banks (~USD 17B). Deputy General Manager, Banco Nacional de Costa Rica. 20+ years across operations, strategy, capital markets, and governance.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Melvin Garita Mora">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://melvingarita.com/">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Melvin Garita — Banking Executive">
+    <meta property="og:description" content="Deputy General Manager at Banco Nacional de Costa Rica. Over two decades leading institutional performance in banking.">
+    <meta property="og:image" content="https://melvingarita.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:url" content="https://melvingarita.com/">
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Melvin Garita">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Melvin Garita — Banking Executive">
+    <meta name="twitter:description" content="Deputy General Manager at Banco Nacional de Costa Rica. Leading institutional performance at scale.">
+    <meta name="twitter:image" content="https://melvingarita.com/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <!-- Schema.org Structured Data -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -20,1069 +50,422 @@
         "jobTitle": "Deputy General Manager — Operations",
         "worksFor": {
             "@type": "Organization",
-            "name": "Banco Nacional de Costa Rica"
+            "name": "Banco Nacional de Costa Rica",
+            "url": "https://www.bncr.fi.cr"
         },
         "url": "https://melvingarita.com",
         "sameAs": ["https://linkedin.com/in/melvingarita"],
         "alumniOf": [
+            {"@type": "Organization", "name": "Instituto Tecnológico de Costa Rica"},
             {"@type": "Organization", "name": "Universidad de Costa Rica"},
-            {"@type": "Organization", "name": "Instituto Tecnológico de Costa Rica"}
+            {"@type": "Organization", "name": "Wharton School"}
         ],
-        "knowsAbout": ["Banking", "Institutional Leadership", "Corporate Governance", "Capital Markets", "Strategy Execution"]
+        "knowsAbout": ["Banking", "Institutional Leadership", "Corporate Governance", "Capital Markets", "Strategy Execution", "Organizational Performance"],
+        "image": "https://melvingarita.com/MG.jpeg",
+        "email": "melvin@melvingarita.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San José",
+            "addressCountry": "CR"
+        }
     }
     </script>
-
+    
     <style>
-        /* ========================================
-           CSS VARIABLES — DESIGN SYSTEM
-           ======================================== */
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        
         :root {
             --navy: #1B2A4A;
-            --navy-light: #243656;
-            --navy-dark: #131E36;
+            --navy-light: #243556;
             --gold: #C9A96E;
-            --gold-light: #D4BA8A;
+            --gold-light: #D4BA85;
             --warm-gray: #F5F3F0;
-            --warm-gray-dark: #E8E4DF;
             --white: #FFFFFF;
             --text-dark: #2D2D2D;
-            --text-medium: #5A5A5A;
-            --text-light: #8A8A8A;
-            --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
-            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            --max-width: 1200px;
-            --section-padding: clamp(60px, 10vw, 120px);
+            --text-muted: #6B7280;
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, sans-serif;
         }
-
-        /* ========================================
-           RESET & BASE
-           ======================================== */
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-        }
-
-        body {
-            font-family: var(--font-body);
-            color: var(--text-dark);
-            line-height: 1.7;
-            background-color: var(--white);
-            -webkit-font-smoothing: antialiased;
-        }
-
-        img { max-width: 100%; height: auto; display: block; }
-        a { color: inherit; text-decoration: none; }
-
-        /* ========================================
-           TYPOGRAPHY
-           ======================================== */
-        h1, h2, h3, h4, h5 {
-            font-family: var(--font-heading);
-            font-weight: 500;
-            line-height: 1.25;
-        }
-
-        .section-label {
-            font-family: var(--font-body);
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: var(--gold);
-            margin-bottom: 1rem;
-        }
-
-        /* ========================================
-           NAVIGATION
-           ======================================== */
+        
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-sans); color: var(--text-dark); line-height: 1.7; background: var(--white); }
+        
+        /* ===== NAVIGATION ===== */
         .nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            padding: 1.25rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            background: rgba(27, 42, 74, 0.97); backdrop-filter: blur(10px);
+            padding: 0 2rem; height: 64px;
+            display: flex; align-items: center; justify-content: space-between;
+            border-bottom: 1px solid rgba(201, 169, 110, 0.15);
         }
-
-        .nav.scrolled {
-            background-color: rgba(27, 42, 74, 0.97);
-            box-shadow: 0 2px 20px rgba(0,0,0,0.15);
-        }
-
-        .nav-logo {
-            font-family: var(--font-heading);
-            font-size: 1.15rem;
-            font-weight: 500;
-            color: var(--white);
-            letter-spacing: 0.02em;
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            font-size: 0.85rem;
-            font-weight: 400;
-            color: rgba(255,255,255,0.8);
-            letter-spacing: 0.03em;
-            transition: color 0.2s ease;
-        }
-
-        .nav-links a:hover { color: var(--gold-light); }
-
-        .nav-cta-btn {
-            background: transparent;
-            border: 1px solid rgba(201, 169, 110, 0.5);
-            color: var(--gold-light) !important;
-            padding: 0.5rem 1.25rem;
-            border-radius: 2px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            letter-spacing: 0.05em;
-            transition: all 0.3s ease;
-        }
-
-        .nav-cta-btn:hover {
-            background: var(--gold);
-            color: var(--navy) !important;
-            border-color: var(--gold);
-        }
-
-        /* Hamburger */
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-        }
-        .hamburger span {
-            width: 24px;
-            height: 2px;
-            background: var(--white);
-            transition: 0.3s;
-        }
-
-        /* ========================================
-           BLOCK 1: HERO
-           ======================================== */
+        .nav-logo { font-family: var(--font-serif); color: var(--white); font-size: 1.1rem; text-decoration: none; font-weight: 700; letter-spacing: 0.5px; }
+        .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
+        .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; letter-spacing: 0.5px; text-transform: uppercase; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--gold); }
+        .nav-cta { background: transparent; border: 1px solid var(--gold); color: var(--gold) !important; padding: 0.4rem 1.2rem; border-radius: 2px; transition: all 0.3s; }
+        .nav-cta:hover { background: var(--gold); color: var(--navy) !important; }
+        .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 5px; }
+        .hamburger span { display: block; width: 24px; height: 2px; background: var(--white); transition: 0.3s; }
+        
+        /* ===== HERO ===== */
         .hero {
-            min-height: 100vh;
-            background-color: var(--navy);
-            display: flex;
-            align-items: center;
-            padding: 120px 2rem 80px;
-            position: relative;
-            overflow: hidden;
+            background: var(--navy); color: var(--white);
+            padding: 10rem 2rem 6rem; min-height: 90vh;
+            display: flex; align-items: center; justify-content: center;
         }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            width: 50%;
-            background: linear-gradient(135deg, transparent 0%, rgba(19, 30, 54, 0.3) 100%);
-            pointer-events: none;
-        }
-
-        .hero-inner {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-content { color: var(--white); }
-
-        .hero-name {
-            font-family: var(--font-heading);
-            font-size: clamp(2.2rem, 4vw, 3.2rem);
-            font-weight: 500;
-            letter-spacing: -0.01em;
-            margin-bottom: 0.4rem;
-            color: var(--white);
-        }
-
-        .hero-role {
-            font-family: var(--font-body);
-            font-size: 0.85rem;
-            font-weight: 500;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: var(--gold);
-            margin-bottom: 1.5rem;
-        }
-
-        .hero-headline {
-            font-family: var(--font-heading);
-            font-size: clamp(1.4rem, 2.5vw, 1.9rem);
-            font-weight: 400;
-            font-style: italic;
-            color: rgba(255,255,255,0.9);
-            margin-bottom: 2rem;
-            line-height: 1.35;
-        }
-
-        .hero-subtitle {
-            font-size: 1.05rem;
-            font-weight: 300;
-            color: rgba(255,255,255,0.75);
-            line-height: 1.75;
-            max-width: 520px;
-            margin-bottom: 2.5rem;
-        }
-
+        .hero-inner { max-width: 1100px; width: 100%; display: flex; align-items: center; gap: 4rem; }
+        .hero-photo { flex-shrink: 0; width: 340px; height: 425px; border-radius: 4px; overflow: hidden; }
+        .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+        .hero-content { flex: 1; }
+        .hero-name { font-family: var(--font-serif); font-size: 3.2rem; font-weight: 700; letter-spacing: 1px; margin-bottom: 0.3rem; line-height: 1.1; }
+        .hero-title { font-size: 0.95rem; text-transform: uppercase; letter-spacing: 3px; color: rgba(255,255,255,0.7); margin-bottom: 0.8rem; font-weight: 500; }
+        .hero-headline { font-family: var(--font-serif); font-size: 1.6rem; color: var(--gold); font-style: italic; margin-bottom: 1.5rem; line-height: 1.4; }
+        .hero-subtitle { font-size: 1.05rem; color: rgba(255,255,255,0.75); line-height: 1.8; max-width: 540px; margin-bottom: 2rem; }
         .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
-
-        .btn-primary {
-            display: inline-block;
-            padding: 0.85rem 2rem;
-            background: var(--gold);
-            color: var(--navy);
-            font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 0.06em;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .btn-primary:hover {
-            background: var(--gold-light);
-            transform: translateY(-1px);
-        }
-
-        .btn-secondary {
-            display: inline-block;
-            padding: 0.85rem 2rem;
-            background: transparent;
-            color: rgba(255,255,255,0.8);
-            font-size: 0.85rem;
-            font-weight: 500;
-            letter-spacing: 0.06em;
-            border: 1px solid rgba(255,255,255,0.25);
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .btn-secondary:hover {
-            border-color: rgba(255,255,255,0.5);
-            color: var(--white);
-        }
-
-        .hero-photo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hero-photo img {
-            width: 100%;
-            max-width: 480px;
-            height: auto;
-            object-fit: cover;
-            border-radius: 2px;
-            box-shadow: 0 25px 60px rgba(0,0,0,0.4);
-        }
-
-        /* ========================================
-           BLOCK 2: SCOPE BAR
-           ======================================== */
-        .scope-bar {
-            background-color: var(--navy-dark);
-            padding: 3rem 2rem;
-        }
-
-        .scope-bar-inner {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-        }
-
-        .scope-cluster {
-            text-align: center;
-            padding: 1.5rem;
-            border-right: 1px solid rgba(255,255,255,0.08);
-        }
-
-        .scope-cluster:last-child { border-right: none; }
-
-        .scope-cluster-title {
-            font-family: var(--font-body);
-            font-size: 0.7rem;
-            font-weight: 600;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: var(--gold);
-            margin-bottom: 0.75rem;
-        }
-
-        .scope-cluster-data {
-            font-family: var(--font-heading);
-            font-size: 1rem;
-            color: rgba(255,255,255,0.9);
-            line-height: 1.8;
-        }
-
-        .scope-cluster-data strong {
-            font-size: 1.15rem;
-            color: var(--white);
-        }
-
-        /* ========================================
-           SECTIONS — GENERAL
-           ======================================== */
-        .section {
-            padding: var(--section-padding) 2rem;
-        }
-
-        .section-inner {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .section-wide {
-            max-width: var(--max-width);
-            margin: 0 auto;
-        }
-
-        .section--warm { background-color: var(--warm-gray); }
-        .section--navy { background-color: var(--navy); color: var(--white); }
-        .section--white { background-color: var(--white); }
-
-        /* ========================================
-           BLOCK 3: LEADERSHIP THROUGH COMPLEXITY
-           ======================================== */
-        .complexity-text {
-            font-size: 1.1rem;
-            line-height: 1.85;
-            color: var(--text-dark);
-            max-width: 720px;
-        }
-
-        .complexity-text p + p { margin-top: 1.5rem; }
-
-        .section-title {
-            font-family: var(--font-heading);
-            font-size: clamp(1.6rem, 3vw, 2.2rem);
-            font-weight: 500;
-            margin-bottom: 2rem;
-            color: var(--text-dark);
-        }
-
-        .section--navy .section-title { color: var(--white); }
-
-        /* ========================================
-           BLOCK 4: COO → CEO BRIDGE
-           ======================================== */
-        .bridge {
-            background-color: var(--warm-gray);
-            border-left: 3px solid var(--gold);
-            padding: 2.5rem 3rem;
-            margin: 0 auto;
-            max-width: 800px;
-        }
-
-        .bridge p {
-            font-size: 1.1rem;
-            font-style: italic;
-            line-height: 1.85;
-            color: var(--text-dark);
-        }
-
-        .bridge-label {
-            font-family: var(--font-body);
-            font-size: 0.7rem;
-            font-weight: 600;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: var(--gold);
-            margin-bottom: 1rem;
-            display: block;
-        }
-
-        /* ========================================
-           BLOCK 5: BOARD PERSPECTIVE
-           ======================================== */
-        .board-text {
-            font-size: 1rem;
-            line-height: 1.85;
-            color: var(--text-medium);
-            font-style: italic;
-        }
-
-        /* ========================================
-           BLOCK 6: EXECUTIVE THESIS
-           ======================================== */
-        .thesis {
-            text-align: center;
-            padding: var(--section-padding) 2rem;
-            background-color: var(--navy);
-        }
-
-        .thesis-quote {
-            font-family: var(--font-heading);
-            font-size: clamp(1.3rem, 2.5vw, 1.8rem);
-            font-weight: 400;
-            font-style: italic;
-            color: rgba(255,255,255,0.92);
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto 1.5rem;
-        }
-
-        .thesis-attribution {
-            font-family: var(--font-body);
-            font-size: 0.85rem;
-            color: var(--gold);
-            letter-spacing: 0.05em;
-        }
-
-        /* ========================================
-           BLOCK 7: FLAGSHIP CASE
-           ======================================== */
-        .flagship-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .flagship-context {
-            font-size: 0.85rem;
-            color: var(--text-light);
-            letter-spacing: 0.03em;
-            margin-bottom: 0.5rem;
-        }
-
-        .flagship-title {
-            font-family: var(--font-heading);
-            font-size: clamp(1.4rem, 2.5vw, 2rem);
-            font-weight: 500;
-            color: var(--text-dark);
-            margin-bottom: 0.75rem;
-        }
-
-        .flagship-subtitle {
-            font-size: 1rem;
-            color: var(--text-medium);
-            font-style: italic;
-        }
-
-        .metrics-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1.5rem;
-            margin-bottom: 2.5rem;
-        }
-
-        .metric-card {
-            text-align: center;
-            padding: 2rem 1rem;
-            background: var(--white);
-            border: 1px solid var(--warm-gray-dark);
-            border-radius: 2px;
-        }
-
-        .section--warm .metric-card {
-            background: var(--white);
-        }
-
-        .metric-value {
-            font-family: var(--font-heading);
-            font-size: 1.6rem;
-            font-weight: 600;
-            color: var(--navy);
-            margin-bottom: 0.35rem;
-        }
-
-        .metric-label {
-            font-size: 0.78rem;
-            color: var(--text-light);
-            line-height: 1.4;
-        }
-
-        .flagship-awards {
-            text-align: center;
-            font-size: 0.88rem;
-            color: var(--text-medium);
-            margin-bottom: 2rem;
-        }
-
-        .flagship-awards strong { color: var(--text-dark); }
-
-        .flagship-cta {
-            text-align: center;
-        }
-
-        .btn-outline {
-            display: inline-block;
-            padding: 0.75rem 2rem;
-            border: 1px solid var(--navy);
-            color: var(--navy);
-            font-size: 0.85rem;
-            font-weight: 500;
-            letter-spacing: 0.05em;
-            transition: all 0.3s ease;
-        }
-
-        .btn-outline:hover {
-            background: var(--navy);
-            color: var(--white);
-        }
-
-        /* ========================================
-           BLOCK 8: INSTITUTIONAL OUTCOMES
-           ======================================== */
-        .pillars-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-        }
-
-        .pillar {
-            padding: 2rem;
-            background: var(--white);
-            border-top: 3px solid var(--gold);
-        }
-
-        .pillar-title {
-            font-family: var(--font-heading);
-            font-size: 1.15rem;
-            font-weight: 500;
-            color: var(--navy);
-            margin-bottom: 1.25rem;
-        }
-
-        .pillar-items { list-style: none; }
-
-        .pillar-items li {
-            font-size: 0.9rem;
-            color: var(--text-medium);
-            padding: 0.5rem 0;
-            border-bottom: 1px solid var(--warm-gray-dark);
-        }
-
-        .pillar-items li:last-child { border-bottom: none; }
-
-        .pillar-items strong {
-            color: var(--navy);
-            font-weight: 600;
-        }
-
-        /* ========================================
-           BLOCK 9: EXPLORE
-           ======================================== */
-        .explore-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-        }
-
-        .explore-card {
-            padding: 2.5rem 2rem;
-            background: var(--warm-gray);
-            border-radius: 2px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .explore-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.08);
-        }
-
-        .explore-card-title {
-            font-family: var(--font-heading);
-            font-size: 1.25rem;
-            font-weight: 500;
-            color: var(--navy);
-            margin-bottom: 0.75rem;
-        }
-
-        .explore-card-text {
-            font-size: 0.9rem;
-            color: var(--text-medium);
-            line-height: 1.7;
-            margin-bottom: 1.5rem;
-        }
-
-        .explore-card-link {
-            font-size: 0.85rem;
-            font-weight: 500;
-            color: var(--gold);
-            letter-spacing: 0.03em;
-        }
-
-        .explore-card-link:hover { color: var(--navy); }
-
-        /* ========================================
-           BLOCK 10: TESTIMONIALS
-           ======================================== */
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-        }
-
-        .testimonial {
-            padding: 2rem;
-            background: rgba(255,255,255,0.06);
-            border-left: 2px solid var(--gold);
-            border-radius: 0 2px 2px 0;
-        }
-
-        .testimonial-text {
-            font-size: 0.92rem;
-            font-style: italic;
-            color: rgba(255,255,255,0.82);
-            line-height: 1.75;
-            margin-bottom: 1.25rem;
-        }
-
-        .testimonial-author {
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: var(--gold);
-        }
-
-        .testimonial-role {
-            font-size: 0.75rem;
-            color: rgba(255,255,255,0.5);
-            line-height: 1.5;
-            margin-top: 0.2rem;
-        }
-
-        .testimonial-label {
-            font-size: 0.65rem;
-            font-weight: 600;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: rgba(255,255,255,0.35);
-            margin-bottom: 0.75rem;
-        }
-
-        /* ========================================
-           BLOCK 11: CTA PREMIUM
-           ======================================== */
-        .cta-premium {
-            text-align: center;
-            padding: var(--section-padding) 2rem;
-            background: var(--warm-gray);
-        }
-
-        .cta-premium-title {
-            font-family: var(--font-heading);
-            font-size: 1.8rem;
-            font-weight: 500;
-            color: var(--navy);
-            margin-bottom: 1rem;
-        }
-
-        .cta-premium-subtitle {
-            font-size: 1rem;
-            color: var(--text-medium);
-            margin-bottom: 2rem;
-            font-style: italic;
-            max-width: 550px;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.7;
-        }
-
-        .cta-premium-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .cta-premium-links a {
-            font-size: 0.85rem;
-            font-weight: 500;
-            color: var(--navy);
-            letter-spacing: 0.03em;
-            padding-bottom: 2px;
-            border-bottom: 1px solid var(--gold);
-            transition: color 0.2s ease;
-        }
-
-        .cta-premium-links a:hover { color: var(--gold); }
-
-        /* ========================================
-           FOOTER
-           ======================================== */
-        .footer {
-            background: var(--navy-dark);
-            padding: 2.5rem 2rem;
-            text-align: center;
-        }
-
-        .footer-text {
-            font-size: 0.8rem;
-            color: rgba(255,255,255,0.4);
-        }
-
-        .footer-links {
-            margin-top: 0.75rem;
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-        }
-
-        .footer-links a {
-            font-size: 0.8rem;
-            color: rgba(255,255,255,0.5);
-            transition: color 0.2s;
-        }
-
-        .footer-links a:hover { color: var(--gold); }
-
-        /* ========================================
-           ANIMATIONS
-           ======================================== */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.7s ease, transform 0.7s ease;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* ========================================
-           RESPONSIVE
-           ======================================== */
-        @media (max-width: 968px) {
-            .hero-inner {
-                grid-template-columns: 1fr;
-                text-align: center;
-                gap: 2.5rem;
-            }
-            .hero-photo { order: -1; }
-            .hero-photo img { max-width: 320px; margin: 0 auto; }
-            .hero-subtitle { margin-left: auto; margin-right: auto; }
+        .btn-primary { background: var(--gold); color: var(--navy); padding: 0.75rem 1.8rem; text-decoration: none; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; border-radius: 2px; transition: all 0.3s; }
+        .btn-primary:hover { background: var(--gold-light); }
+        .btn-secondary { background: transparent; border: 1px solid rgba(255,255,255,0.3); color: var(--white); padding: 0.75rem 1.8rem; text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; border-radius: 2px; transition: all 0.3s; }
+        .btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+        
+        /* ===== SECTIONS ===== */
+        .section { padding: 5rem 2rem; }
+        .section-inner { max-width: 960px; margin: 0 auto; }
+        .section-navy { background: var(--navy); color: var(--white); }
+        .section-gray { background: var(--warm-gray); }
+        .section-white { background: var(--white); }
+        
+        .section-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 3px; color: var(--gold); font-weight: 600; margin-bottom: 1rem; }
+        .section-title { font-family: var(--font-serif); font-size: 2rem; margin-bottom: 1.5rem; line-height: 1.3; }
+        .section-text { font-size: 1rem; line-height: 1.9; color: var(--text-muted); max-width: 700px; }
+        .section-text-white { color: rgba(255,255,255,0.8); }
+        
+        /* ===== SCOPE BAR ===== */
+        .scope-bar { background: var(--warm-gray); padding: 3.5rem 2rem; }
+        .scope-inner { max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+        .scope-cluster h3 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--gold); margin-bottom: 0.6rem; font-weight: 600; font-family: var(--font-sans); }
+        .scope-cluster p { font-size: 0.95rem; color: var(--text-dark); line-height: 1.7; }
+        
+        /* ===== BRIDGE ===== */
+        .bridge { background: var(--navy); color: var(--white); padding: 4rem 2rem; border-left: 3px solid var(--gold); }
+        .bridge-inner { max-width: 700px; margin: 0 auto; }
+        .bridge-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 3px; color: var(--gold); margin-bottom: 1rem; font-weight: 600; }
+        .bridge-text { font-family: var(--font-serif); font-size: 1.15rem; font-style: italic; color: rgba(255,255,255,0.85); line-height: 1.9; }
+        
+        /* ===== BOARD ===== */
+        .board-text { font-size: 0.95rem; color: var(--text-muted); line-height: 1.9; max-width: 700px; }
+        
+        /* ===== THESIS ===== */
+        .thesis { background: var(--warm-gray); padding: 5rem 2rem; text-align: center; }
+        .thesis-inner { max-width: 750px; margin: 0 auto; }
+        .thesis-quote { font-family: var(--font-serif); font-size: 1.7rem; font-style: italic; color: var(--navy); line-height: 1.6; margin-bottom: 1.5rem; }
+        .thesis-author { font-size: 0.85rem; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; font-weight: 600; }
+        
+        /* ===== FLAGSHIP ===== */
+        .flagship { background: var(--navy); color: var(--white); padding: 5rem 2rem; }
+        .flagship-inner { max-width: 960px; margin: 0 auto; }
+        .flagship-badge { display: inline-block; background: var(--gold); color: var(--navy); font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; padding: 0.3rem 0.8rem; margin-bottom: 1.5rem; border-radius: 2px; }
+        .flagship-meta { font-size: 0.85rem; color: rgba(255,255,255,0.5); letter-spacing: 1px; margin-bottom: 0.5rem; }
+        .flagship-title { font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 1rem; }
+        .flagship-subtitle { font-size: 1rem; color: rgba(255,255,255,0.7); margin-bottom: 2rem; font-style: italic; }
+        .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 1.5rem; }
+        .metric { text-align: center; padding: 1.2rem; background: rgba(255,255,255,0.05); border-radius: 4px; }
+        .metric-value { font-family: var(--font-serif); font-size: 1.4rem; color: var(--gold); margin-bottom: 0.3rem; }
+        .metric-label { font-size: 0.75rem; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 1px; }
+        .flagship-awards { font-size: 0.85rem; color: rgba(255,255,255,0.5); text-align: center; margin-top: 1.5rem; }
+        
+        /* ===== PILLARS ===== */
+        .pillars-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; }
+        .pillar h3 { font-family: var(--font-serif); font-size: 1.1rem; color: var(--navy); margin-bottom: 1rem; }
+        .pillar ul { list-style: none; }
+        .pillar li { font-size: 0.9rem; color: var(--text-muted); padding: 0.4rem 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+        .pillar li:last-child { border: none; }
+        
+        /* ===== EXPLORE ===== */
+        .explore-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+        .explore-card { padding: 2rem; background: var(--white); border: 1px solid rgba(0,0,0,0.08); border-radius: 4px; transition: all 0.3s; }
+        .explore-card:hover { border-color: var(--gold); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.08); }
+        .explore-card h3 { font-family: var(--font-serif); font-size: 1.2rem; color: var(--navy); margin-bottom: 0.8rem; }
+        .explore-card p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem; }
+        .explore-card a { color: var(--gold); text-decoration: none; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.5px; }
+        
+        /* ===== TESTIMONIALS ===== */
+        .testimonials-grid { display: grid; grid-template-columns: 1fr; gap: 2.5rem; }
+        .testimonial { padding: 2rem; border-left: 3px solid var(--gold); background: rgba(245,243,240,0.5); }
+        .testimonial-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); font-weight: 600; margin-bottom: 0.8rem; }
+        .testimonial-text { font-size: 0.95rem; color: var(--text-dark); line-height: 1.8; font-style: italic; margin-bottom: 1rem; }
+        .testimonial-author { font-size: 0.85rem; font-weight: 600; color: var(--navy); }
+        .testimonial-role { font-size: 0.8rem; color: var(--text-muted); }
+        
+        /* ===== CTA ===== */
+        .cta-section { background: var(--navy); color: var(--white); padding: 4rem 2rem; text-align: center; }
+        .cta-title { font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 0.8rem; }
+        .cta-subtitle { font-size: 0.95rem; color: rgba(255,255,255,0.6); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; font-style: italic; }
+        .cta-links { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+        .cta-links a { color: var(--gold); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: opacity 0.3s; }
+        .cta-links a:hover { opacity: 0.8; }
+        
+        /* ===== FOOTER ===== */
+        .footer { background: var(--navy); border-top: 1px solid rgba(255,255,255,0.08); padding: 2rem; text-align: center; }
+        .footer p { font-size: 0.8rem; color: rgba(255,255,255,0.4); }
+        
+        /* ===== ANIMATIONS ===== */
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .nav-links { display: none; position: fixed; top: 64px; left: 0; right: 0; background: var(--navy); flex-direction: column; padding: 2rem; gap: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); }
+            .nav-links.active { display: flex; }
+            .hamburger { display: flex; }
+            .hero { padding: 7rem 1.5rem 4rem; min-height: auto; }
+            .hero-inner { flex-direction: column; gap: 2rem; text-align: center; }
+            .hero-photo { width: 220px; height: 275px; margin: 0 auto; }
+            .hero-name { font-size: 2.2rem; }
+            .hero-headline { font-size: 1.3rem; }
+            .hero-subtitle { margin: 0 auto 2rem; }
             .hero-ctas { justify-content: center; }
-            .scope-bar-inner { grid-template-columns: 1fr; gap: 0; }
-            .scope-cluster { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); padding: 1.25rem; }
-            .scope-cluster:last-child { border-bottom: none; }
+            .scope-inner { grid-template-columns: 1fr; }
             .metrics-grid { grid-template-columns: repeat(2, 1fr); }
             .pillars-grid { grid-template-columns: 1fr; }
             .explore-grid { grid-template-columns: 1fr; }
-            .testimonials-grid { grid-template-columns: 1fr; }
-            .nav-links { display: none; }
-            .hamburger { display: flex; }
-            .nav-links.active {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: var(--navy);
-                padding: 1.5rem 2rem;
-                gap: 1rem;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .metrics-grid { grid-template-columns: 1fr; }
-            .hero-name { font-size: 2rem; }
+            .thesis-quote { font-size: 1.3rem; }
+            .section { padding: 3.5rem 1.5rem; }
         }
     </style>
 </head>
 <body>
 
-<!-- ============================================
-     NAVIGATION
-     ============================================ -->
-<nav class="nav" id="navbar">
-    <a href="/" class="nav-logo">Melvin Garita</a>
-    <div class="hamburger" id="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')">
-        <span></span><span></span><span></span>
-    </div>
-    <ul class="nav-links">
-        <li><a href="/cases">Cases</a></li>
-        <li><a href="/approach">Approach</a></li>
-        <li><a href="/thoughts">Thoughts</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="#connect" class="nav-cta-btn">Connect</a></li>
-    </ul>
-</nav>
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <a href="/" class="nav-logo">Melvin Garita</a>
+        <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="/cases">Cases</a></li>
+            <li><a href="/approach">Approach</a></li>
+            <li><a href="/thoughts">Thoughts</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="#connect" class="nav-cta">Connect</a></li>
+        </ul>
+    </nav>
 
-<!-- ============================================
-     BLOCK 1: HERO
-     ============================================ -->
-<section class="hero" id="hero">
-    <div class="hero-inner">
-        <div class="hero-content">
-            <h1 class="hero-name">Melvin Garita</h1>
-            <p class="hero-role">Banking Executive</p>
-            <p class="hero-headline">Leading Institutional Performance</p>
-            <p class="hero-subtitle">Over two decades in banking, I have led institutions through periods of change at increasing scale — building the conditions for durable performance.</p>
-            <div class="hero-ctas">
-                <a href="/cases" class="btn-primary">Explore the Track Record &rarr;</a>
-                <a href="/about" class="btn-secondary">Executive Profile &rarr;</a>
+    <!-- BLOCK 1: HERO -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-photo">
+                <img src="https://melvingarita.com/MG.jpeg" alt="Melvin Garita Mora — Banking Executive, Deputy General Manager at Banco Nacional de Costa Rica" width="480" height="600" loading="eager">
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-name">Melvin Garita</h1>
+                <p class="hero-title">Banking Executive</p>
+                <p class="hero-headline">Leading Institutional Performance</p>
+                <p class="hero-subtitle">Over two decades in banking, I have led institutions through periods of change at increasing scale — building the conditions for durable performance.</p>
+                <div class="hero-ctas">
+                    <a href="/cases" class="btn-primary">Explore the Track Record</a>
+                    <a href="/about" class="btn-secondary">Executive Profile</a>
+                </div>
             </div>
         </div>
-        <div class="hero-photo">
-            <img src="https://melvingarita.com/MG.jpeg" alt="Melvin Garita — Banking Executive" loading="eager">
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- ============================================
-     BLOCK 2: ENTERPRISE SCOPE BAR
-     ============================================ -->
-<section class="scope-bar">
-    <div class="scope-bar-inner">
-        <div class="scope-cluster">
-            <p class="scope-cluster-title">Institutional Scale</p>
-            <p class="scope-cluster-data"><strong>USD 17B+</strong> in assets<br>1,700+ professionals</p>
-        </div>
-        <div class="scope-cluster">
-            <p class="scope-cluster-title">Capital &amp; Markets</p>
-            <p class="scope-cluster-data"><strong>~USD 218M</strong> in<br>intermediation economics</p>
-        </div>
-        <div class="scope-cluster">
-            <p class="scope-cluster-title">Governance &amp; Leadership</p>
-            <p class="scope-cluster-data"><strong>3</strong> board directorships<br>4 institutions · 20+ years</p>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================
-     BLOCK 3: LEADERSHIP THROUGH COMPLEXITY
-     ============================================ -->
-<section class="section section--white">
-    <div class="section-inner fade-in">
-        <p class="section-label">Leadership Context</p>
-        <h2 class="section-title">Leadership Under Complexity</h2>
-        <div class="complexity-text">
-            <p>Financial institutions are rarely constrained by strategy alone. The deeper challenge is navigating regulatory pressure, political dynamics, organizational resistance, and execution discipline — simultaneously and over years.</p>
-            <p>My work has centered on leading through that complexity: making consequential decisions with incomplete information, building trust across governance layers, and sustaining change when the initial mandate fades.</p>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================
-     BLOCK 4: FROM EXECUTION TO ENTERPRISE LEADERSHIP
-     ============================================ -->
-<section class="section section--warm">
-    <div class="section-inner fade-in">
-        <div class="bridge">
-            <span class="bridge-label">From Execution to Enterprise Leadership</span>
-            <p>Operations became strategy by necessity. Leading at the scale of a USD 17 billion institution meant that capital allocation, governance, talent, and execution could not remain separate functions — they had to operate as one system.</p>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================
-     BLOCK 5: BOARD PERSPECTIVE
-     ============================================ -->
-<section class="section section--white">
-    <div class="section-inner fade-in">
-        <p class="section-label">Board Perspective</p>
-        <p class="board-text">Three directorships across capital markets infrastructure, broker-dealer governance, and institutional performance oversight. Experience navigating fiduciary responsibility, enterprise risk, and the tension between short-term pressure and long-term institutional value.</p>
-    </div>
-</section>
-
-<!-- ============================================
-     BLOCK 6: EXECUTIVE THESIS
-     ============================================ -->
-<section class="thesis fade-in">
-    <p class="thesis-quote">"Institutional performance is rarely accidental. It comes from alignment — of people, incentives, governance, and execution — sustained over time."</p>
-    <p class="thesis-attribution">— Melvin Garita</p>
-</section>
-
-<!-- ============================================
-     BLOCK 7: FLAGSHIP CASE — BN VALORES
-     ============================================ -->
-<section class="section section--warm">
-    <div class="section-wide fade-in">
-        <div class="flagship-header">
-            <p class="section-label">Flagship Transformation</p>
-            <h2 class="flagship-title">BN Valores · CEO · 2018–2023</h2>
-            <p class="flagship-subtitle">From underperforming subsidiary to nationally and internationally recognized institutional benchmark.</p>
-        </div>
-        <div class="metrics-grid">
-            <div class="metric-card">
-                <p class="metric-value">10.3% → 16.0%</p>
-                <p class="metric-label">ROAE Improvement</p>
+    <!-- BLOCK 2: ENTERPRISE SCOPE BAR -->
+    <div class="scope-bar">
+        <div class="scope-inner">
+            <div class="scope-cluster">
+                <h3>Institutional Scale</h3>
+                <p>USD 17B+ in assets · 1,700+ professionals</p>
             </div>
-            <div class="metric-card">
-                <p class="metric-value">1.13 → 0.77</p>
-                <p class="metric-label">Efficiency Ratio</p>
+            <div class="scope-cluster">
+                <h3>Capital & Markets</h3>
+                <p>~USD 218M in intermediation economics</p>
             </div>
-            <div class="metric-card">
-                <p class="metric-value">~2x</p>
-                <p class="metric-label">NPS vs. World-Class</p>
-            </div>
-            <div class="metric-card">
-                <p class="metric-value">Top Decile</p>
-                <p class="metric-label">McKinsey OHI — LATAM</p>
-            </div>
-        </div>
-        <p class="flagship-awards"><strong>National Excellence Award</strong> (2020) &nbsp;·&nbsp; <strong>International Best Practice Competition</strong> (2022)</p>
-        <div class="flagship-cta">
-            <a href="/cases" class="btn-outline">View Leadership Case &rarr;</a>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================
-     BLOCK 8: INSTITUTIONAL OUTCOMES
-     ============================================ -->
-<section class="section section--white">
-    <div class="section-wide fade-in">
-        <p class="section-label" style="text-align:center">Institutional Outcomes</p>
-        <h2 class="section-title" style="text-align:center">Performance Across Scales</h2>
-        <div class="pillars-grid">
-            <div class="pillar">
-                <h3 class="pillar-title">Value Creation &amp; Profitability</h3>
-                <ul class="pillar-items">
-                    <li><strong>+56%</strong> ROAE improvement (BN Valores)</li>
-                    <li><strong>+25%</strong> fee income above target (BN Operations)</li>
-                    <li><strong>~USD 218M</strong> intermediation economics managed (Trading)</li>
-                </ul>
-            </div>
-            <div class="pillar">
-                <h3 class="pillar-title">Institutional Discipline &amp; Efficiency</h3>
-                <ul class="pillar-items">
-                    <li>Efficiency ratio: <strong>1.13 → 0.77</strong></li>
-                    <li>Cycle times: <strong>-52%</strong></li>
-                    <li>Fraud losses: <strong>-41%</strong></li>
-                </ul>
-            </div>
-            <div class="pillar">
-                <h3 class="pillar-title">Strategic Leadership &amp; Recognition</h3>
-                <ul class="pillar-items">
-                    <li><strong>Top Decile</strong> McKinsey OHI — LATAM</li>
-                    <li>NPS: <strong>~2x</strong> world-class benchmark</li>
-                    <li><strong>National Excellence Award</strong> + IBPC International</li>
-                </ul>
+            <div class="scope-cluster">
+                <h3>Governance & Leadership</h3>
+                <p>3 board directorships · 4 institutions · 20+ years</p>
             </div>
         </div>
     </div>
-</section>
 
-<!-- ============================================
-     BLOCK 9: EXPLORE
-     ============================================ -->
-<section class="section section--white" style="padding-top: 0;">
-    <div class="section-wide fade-in">
-        <p class="section-label" style="text-align:center">Explore</p>
-        <div class="explore-grid">
-            <a href="/cases" class="explore-card">
-                <h3 class="explore-card-title">Cases</h3>
-                <p class="explore-card-text">Four leadership stories with measurable outcomes — from turning around a struggling brokerage to leading operations at a USD 17 billion institution.</p>
-                <span class="explore-card-link">View cases &rarr;</span>
-            </a>
-            <a href="/approach" class="explore-card">
-                <h3 class="explore-card-title">Approach</h3>
-                <p class="explore-card-text">Executive convictions and the leadership architecture that connects strategic intent with institutional performance.</p>
-                <span class="explore-card-link">See how I lead &rarr;</span>
-            </a>
-            <a href="/thoughts" class="explore-card">
-                <h3 class="explore-card-title">Thoughts</h3>
-                <p class="explore-card-text">Perspectives on banking, governance, and institutional divergence. Featured in CNN en Español, La República, El Financiero, and La Nación.</p>
-                <span class="explore-card-link">Read my thoughts &rarr;</span>
-            </a>
+    <!-- BLOCK 3: LEADERSHIP THROUGH COMPLEXITY -->
+    <section class="section section-white fade-in">
+        <div class="section-inner">
+            <p class="section-label">Leadership Under Complexity</p>
+            <p class="section-text">Financial institutions are rarely constrained by strategy alone. The deeper challenge is navigating regulatory pressure, political dynamics, organizational resistance, and execution discipline — simultaneously and over years.</p>
+            <br>
+            <p class="section-text">My work has centered on leading through that complexity: making consequential decisions with incomplete information, building trust across governance layers, and sustaining change when the initial mandate fades.</p>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ============================================
-     BLOCK 10: TESTIMONIALS
-     ============================================ -->
-<section class="section section--navy">
-    <div class="section-wide fade-in">
-        <p class="section-label" style="text-align:center">Independent Validation</p>
-        <div class="testimonials-grid">
-            <div class="testimonial">
-                <p class="testimonial-label">National Recognition</p>
-                <p class="testimonial-text">"In 2020, BN Valores was awarded the National Excellence Award after demonstrating outstanding and well-balanced performance across all critical dimensions of its management model: leadership and strategic planning, customers and markets, human talent, processes, and innovation and technology."</p>
-                <p class="testimonial-author">Carlos Montenegro</p>
-                <p class="testimonial-role">Executive Director, Costa Rican Chamber of Industries</p>
+    <!-- BLOCK 4: FROM EXECUTION TO ENTERPRISE LEADERSHIP -->
+    <section class="bridge fade-in">
+        <div class="bridge-inner">
+            <p class="bridge-label">From Execution to Enterprise Leadership</p>
+            <p class="bridge-text">Operations became strategy by necessity. Leading at the scale of a USD 17 billion institution meant that capital allocation, governance, talent, and execution could not remain separate functions — they had to operate as one system.</p>
+        </div>
+    </section>
+
+    <!-- BLOCK 5: BOARD PERSPECTIVE -->
+    <section class="section section-white fade-in">
+        <div class="section-inner">
+            <p class="section-label">Board Perspective</p>
+            <p class="board-text">Three directorships across capital markets infrastructure, broker-dealer governance, and institutional performance oversight. Experience navigating fiduciary responsibility, enterprise risk, and the tension between short-term pressure and long-term institutional value.</p>
+        </div>
+    </section>
+
+    <!-- BLOCK 6: EXECUTIVE THESIS -->
+    <section class="thesis fade-in">
+        <div class="thesis-inner">
+            <p class="thesis-quote">"Institutional performance is rarely accidental. It comes from alignment — of people, incentives, governance, and execution — sustained over time."</p>
+            <p class="thesis-author">— Melvin Garita</p>
+        </div>
+    </section>
+
+    <!-- BLOCK 7: FLAGSHIP CASE -->
+    <section class="flagship fade-in">
+        <div class="flagship-inner">
+            <span class="flagship-badge">Flagship Case</span>
+            <p class="flagship-meta">BN Valores · CEO · 2018–2023</p>
+            <h2 class="flagship-title">From Underperforming Subsidiary to Institutional Benchmark</h2>
+            <p class="flagship-subtitle">From a 71-person subsidiary without formal strategic planning to a nationally and internationally recognized model of institutional excellence.</p>
+            <div class="metrics-grid">
+                <div class="metric">
+                    <div class="metric-value">10.3%→16.0%</div>
+                    <div class="metric-label">ROAE (+56%)</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">1.13→0.77</div>
+                    <div class="metric-label">Efficiency Ratio</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">~2x</div>
+                    <div class="metric-label">NPS vs. World-Class</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">Top Decile</div>
+                    <div class="metric-label">McKinsey OHI — LATAM</div>
+                </div>
             </div>
-            <div class="testimonial">
-                <p class="testimonial-label">International Recognition</p>
-                <p class="testimonial-text">"I was very impressed by BN Valores' well-structured approach to linking strategy with day-to-day operations. It is a great best practice to learn from, particularly because it turns strategic priorities into clear actions and measures results across social, economic, and environmental outcomes."</p>
-                <p class="testimonial-author">Dr. Robin Mann</p>
-                <p class="testimonial-role">Chairman, International Best Practice Competition</p>
-            </div>
-            <div class="testimonial">
-                <p class="testimonial-label">Board-Level Perspective</p>
-                <p class="testimonial-text">"He has consistently stood out for his deep industry knowledge, his disciplined pursuit of operational efficiency, and his commitment to strengthening institutional controls."</p>
-                <p class="testimonial-author">Ariel Vishnia</p>
-                <p class="testimonial-role">Former Board Director, National Stock Exchange Financial Group; Chief Financial Officer, BCT Bank</p>
+            <p class="flagship-awards">National Excellence Award (2020) · International Best Practice Competition (2022)</p>
+            <div style="text-align:center; margin-top:2rem;">
+                <a href="/cases" class="btn-primary">View Leadership Case</a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ============================================
-     BLOCK 11: CTA PREMIUM
-     ============================================ -->
-<section class="cta-premium" id="connect">
-    <h2 class="cta-premium-title">Connect</h2>
-    <p class="cta-premium-subtitle">Writing, teaching, and thinking about how financial institutions create lasting value.</p>
-    <div class="cta-premium-links">
-        <a href="https://linkedin.com/in/melvingarita" target="_blank" rel="noopener">LinkedIn &nearr;</a>
-        <a href="mailto:melvin@melvingarita.com">melvin@melvingarita.com</a>
-    </div>
-</section>
+    <!-- BLOCK 8: INSTITUTIONAL OUTCOMES -->
+    <section class="section section-white fade-in">
+        <div class="section-inner">
+            <p class="section-label" style="text-align:center;">Performance Across Scales</p>
+            <h2 class="section-title" style="text-align:center;">Institutional Outcomes</h2>
+            <br>
+            <div class="pillars-grid">
+                <div class="pillar">
+                    <h3>Value Creation & Profitability</h3>
+                    <ul>
+                        <li>ROAE 10.3% → 16.0% (BN Valores)</li>
+                        <li>+25% fee income above target (BN Operations)</li>
+                        <li>~USD 218M intermediation economics (Trading)</li>
+                    </ul>
+                </div>
+                <div class="pillar">
+                    <h3>Institutional Discipline & Efficiency</h3>
+                    <ul>
+                        <li>Efficiency ratio: 1.13 → 0.77</li>
+                        <li>Cycle times: -52%</li>
+                        <li>Fraud losses: -41%</li>
+                    </ul>
+                </div>
+                <div class="pillar">
+                    <h3>Strategic Leadership & Recognition</h3>
+                    <ul>
+                        <li>Top Decile McKinsey OHI — LATAM</li>
+                        <li>NPS: ~2x world-class benchmark</li>
+                        <li>National Excellence Award + IBPC</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- ============================================
-     FOOTER
-     ============================================ -->
-<footer class="footer">
-    <p class="footer-text">&copy; 2026 Melvin Garita Mora &nbsp;·&nbsp; San José, Costa Rica</p>
-    <div class="footer-links">
-        <a href="https://linkedin.com/in/melvingarita" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:melvin@melvingarita.com">Email</a>
-    </div>
-</footer>
+    <!-- BLOCK 9: EXPLORE -->
+    <section class="section section-gray fade-in">
+        <div class="section-inner">
+            <div class="explore-grid">
+                <div class="explore-card">
+                    <h3>Cases</h3>
+                    <p>Four leadership stories with measurable outcomes — from brokerage turnaround to institutional transformation at enterprise scale.</p>
+                    <a href="/cases">Explore cases →</a>
+                </div>
+                <div class="explore-card">
+                    <h3>Approach</h3>
+                    <p>Executive convictions and the leadership architecture behind them — where frameworks end and judgment begins.</p>
+                    <a href="/approach">See approach →</a>
+                </div>
+                <div class="explore-card">
+                    <h3>Thoughts</h3>
+                    <p>Perspectives on banking, governance, and institutional divergence. Published in La República, El Financiero, CNN en Español.</p>
+                    <a href="/thoughts">Read thoughts →</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- ============================================
-     JAVASCRIPT
-     ============================================ -->
-<script>
-    // Sticky nav background on scroll
-    const nav = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-        nav.classList.toggle('scrolled', window.scrollY > 50);
-    });
+    <!-- BLOCK 10: TESTIMONIALS -->
+    <section class="section section-white fade-in">
+        <div class="section-inner">
+            <p class="section-label" style="text-align:center;">Validation</p>
+            <br>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p class="testimonial-label">National Recognition</p>
+                    <p class="testimonial-text">"In 2020, BN Valores was awarded the National Excellence Award after demonstrating outstanding and well-balanced performance across all critical dimensions of its management model: leadership and strategic planning, customers and markets, human talent, processes, and innovation and technology."</p>
+                    <p class="testimonial-author">Carlos Montenegro</p>
+                    <p class="testimonial-role">Executive Director, Costa Rican Chamber of Industries</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-label">International Recognition</p>
+                    <p class="testimonial-text">"I was very impressed by BN Valores' well-structured approach to linking strategy with day-to-day operations. It is a great best practice to learn from, particularly because it turns strategic priorities into clear actions and measures results across social, economic, and environmental outcomes."</p>
+                    <p class="testimonial-author">Dr. Robin Mann</p>
+                    <p class="testimonial-role">Chairman, International Best Practice Competition</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-label">Board Perspective</p>
+                    <p class="testimonial-text">"For more than a decade, I have worked alongside Melvin on matters related to Costa Rica's securities and financial sector. He has consistently stood out for his deep industry knowledge, his disciplined pursuit of operational efficiency, and his commitment to strengthening institutional controls."</p>
+                    <p class="testimonial-author">Ariel Vishnia</p>
+                    <p class="testimonial-role">Former Board Director, National Stock Exchange Financial Group; CFO, BCT Bank</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    // Fade-in on scroll (Intersection Observer)
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    <!-- BLOCK 11: CTA -->
+    <section class="cta-section" id="connect">
+        <h2 class="cta-title">Connect</h2>
+        <p class="cta-subtitle">Writing, teaching, and thinking about how financial institutions create lasting value.</p>
+        <div class="cta-links">
+            <a href="https://linkedin.com/in/melvingarita" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:melvin@melvingarita.com">melvin@melvingarita.com</a>
+        </div>
+    </section>
 
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-</script>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Melvin Garita Mora · San José, Costa Rica</p>
+    </footer>
+
+    <!-- SCROLL ANIMATIONS -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
 
 </body>
 </html>
